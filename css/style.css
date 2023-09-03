@@ -1,0 +1,149 @@
+:root {
+    --navy: #053B50;
+    --blue: #176B87;
+    --teal: #016A70;
+    --grey: #EEEEEE;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+  
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: var(--blue);
+    flex: none;
+}
+
+header .container, footer .container {
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+header .container a:hover {
+    color: yellow;
+}
+
+header .logo-part {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-part .title-link {
+    margin-left: 16px;
+}
+
+header .nav-part {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+main {
+    background-color: var(--grey);
+    flex: auto;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--teal);
+    flex: none;
+}
+
+footer .container {
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container .info-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+footer .container .social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    gap: 16px;
+}
+
+footer .social-buttons .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+@media (width < 661px) {
+    header .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .logo-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    header .nav-part {
+        margin-top: 14px;
+    }
+}
+
+@media (width < 501px) {
+    footer .container .info-text {
+        display: none;
+    }
+
+    footer .container {
+        justify-content: center;
+    }
+}
+
+@media (width < 381px) {
+    header .container a {
+        font-size: 14px;
+    }
+
+    header .nav-part {
+        gap: 30px;
+    }
+
+    footer .social-buttons .social-link {
+        font-size: 16px;
+        height: 30px;
+        width: 30px;
+    }
+}
