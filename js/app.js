@@ -35,7 +35,7 @@ button.addEventListener("click", function() {
                 <button class="delete">
                     <i class="far fa-trash-alt"></i>
                 </button>
-                <div id="task-name">
+                <div class="task-box">
                     <p class="task-item">${inputValue}</p>
                 </div>
             </div>
