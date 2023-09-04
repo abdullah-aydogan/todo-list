@@ -2,4 +2,4 @@
 
 To-Do List application created using HTML, CSS and Javascript.
 
-![todo-list](https://github.com/abdullah-aydogan/todo-list/assets/117303457/9eeae4ab-36cf-4f07-9ff3-b7d8657895ce)
+![photo](https://github.com/abdullah-aydogan/todo-list/assets/117303457/ea6b635e-c1ba-4238-bfbc-2d73a563027b)
