@@ -115,6 +115,7 @@ main #add-part button {
 
 main #list-part{
     width: 40%;
+    max-height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -159,7 +160,7 @@ main .tasks p {
     font-weight: 500;
     margin-left: 20px;
     margin-right: 20px;
-    text-align: justify;
+    text-align: start;
 }
 
 .task button {

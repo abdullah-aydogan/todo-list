@@ -2,6 +2,9 @@
 let list_part = document.getElementById("list-part");
 list_part.style.display = "none";
 
+// Sayaç
+let count_task = 0;
+
 // To-Do ekleme butonu
 let button = document.querySelector("#push");
 
@@ -38,6 +41,8 @@ button.addEventListener("click", function() {
             </div>
         `;
 
+        count_task++;
+
         // Silme butonları
         let currentTasks = document.querySelectorAll(".delete");
 
@@ -47,6 +52,8 @@ button.addEventListener("click", function() {
 
                 // Elemanı kaldır
                 this.parentNode.remove();
+                count_task--;
+                document.getElementById("counter").innerHTML = `${count_task} adet`;
             }
         }
 
@@ -64,5 +71,8 @@ button.addEventListener("click", function() {
 
         // Butona tıklandıktan sonra input'taki veriyi sıfırla
         document.querySelector("#add-part input").value = "";
+
+        // Sayaçtaki değeri ekle
+        document.getElementById("counter").innerHTML = `${count_task} adet`;
     }
 });
