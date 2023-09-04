@@ -5,12 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
+        <!-- Fav Icon -->
         <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <!-- Box Icons -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>To-Do List</title>
     </head>
 
     <body>
+        <!-- Site Üst Başlık Kısmı -->
         <header>
             <div class="container">
                 <div class="logo-part">
@@ -37,15 +42,34 @@
             </div>
         </header>
 
+        <!-- Site İçerik Bölümü -->
         <main>
-            <p style="text-align: center; margin-top: 20px; font-size: 20px;">To-Do List Bölümü</p>
+            <div class="container">
+                <!-- To-Do Ekleme Bölümü -->
+                <div id="add-part">
+                    <div class="input-task">
+                        <input type="text" placeholder="Bir şeyler yazınız...">
+                    </div>
+                    <div class="push-task">
+                        <button id="push">Ekle</button>
+                    </div>
+                </div>
+                <!-- To-Do Listeleme Bölümü -->
+                <div id="list-part">
+                    <div class="tasks">
+                        <p>To-Do Listesi</p>
+                    </div>
+                </div>
+            </div>
         </main>
 
+        <!-- Site Alt Başlık Kısmı -->
         <footer>
             <div class="container">
                 <div class="info-text">
                     <p>aydogan_34tr | 2023</p>
                 </div>
+                <!-- Sosyal Medya Butonları -->
                 <div class="social-buttons">
                     <a href="" class="social-link" style="background: #4267B2;">
                         <i class='bx bxl-facebook'></i>
@@ -64,5 +88,8 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Javascript Import -->
+        <script src="./js/app.js"></script>
     </body>
 </html>
